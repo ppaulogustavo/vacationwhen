@@ -1,5 +1,6 @@
-import logo from './logo.svg';
+import logo from './sun.png';
 import './App.css';
+import moment from "moment";
 
 function App() {
   return (
@@ -7,16 +8,9 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Você pode agendar suas férias para {moment().add('d', 45).format('DD/MM/yyyy')}
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+
       </header>
     </div>
   );
